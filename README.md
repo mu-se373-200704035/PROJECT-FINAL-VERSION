@@ -91,8 +91,7 @@ To communicate with the postgresql database, this app will use a rails API.
   - **shops#update**
   - **shops#destroy**
 
-  **Endpoints**
-  
+  >> **Endpoints**
   -GET https://orderhere.herokuapp.com/shops
   -GET https://orderhere.herokuapp.com/shops/search?q=query
   -PUT https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id
