@@ -119,7 +119,7 @@ To communicate with the postgresql database, this app will use a rails API.
 - **Customer (no need to log in)**
   - Register Page
 
-![](images/register.png)
+![](images/register.PNG)
 
   - Login Page
 
