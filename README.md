@@ -16,60 +16,36 @@ Restaurants and cafes that are not too large or small usually work with 3 – 4 
 
 **Functions And Endpoints**
 
-**Client:**
+**Client Requirements:**
+    • ( for customers ) scanning qr code and claiming the table if it is available.
+    • ( for customers ) function to add to order and send the order to the table which has the matching owner id.
+    • ( for customers ) function to call a waiter for help or request the check.
+    • ( for customers ) function to search for items in the menu by name.
+    
+    >> ( only logged in admins are allowed to see or do the things below )
 
+    • ( for admins ) see tables grid, current orders and waiter requests.
+    • ( for admins ) functions to manipulate the menu.
+    • ( for admins ) function to complete or cancel the orders.
+    • ( for admins ) function to manipulate table information such as ( owned, reserved, empty/available).
+ 
+ **Client Functions**
 - Register/Login_(for admins)_
-
 - List shops
-
-GET https://orderhere.herokuapp.com/shops
-
 - Search for shops
-
-GET https://orderhere.herokuapp.com/shops/search?q=query
-
 - Scan qr code at the table to claim a table:
   - Scan qr code to get table info.
   - PUT request to rails API to claim the table if available.
   - Table&#39;s owner id is generated randomly on the client and saved to localStorage and sent to server too.
-
-PUT [https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id)
-
-required\_params:(owner\_id)
-
 - List the items on the menu for a specific shop.
-
-GET https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id
-
 - Search for items on the menu.
-
-GET [https://orderhere.herokuapp.com/items/search?q=query](https://orderhere.herokuapp.com/shops/search?q=query)
-
 - Add to order.
-- Send order. _// POST_ _{_
-  - _&quot;items&quot;:[_
-  - _{_
-  - _&quot;name&quot;:&quot;tea&quot;,_
-  - _&quot;price&quot;:5,_
-  - _&quot;quantity&quot;:2,_
-  - _&quot;shop\_id&quot;:1,_
-  - _&quot;table\_id&quot;:3,_
-  - _&quot;owner\_id&quot;:&quot;test123124&quot;_
-  - _}_
-  - _]}_
-
-_POST_ _https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id/order\_items_
-
+- Send order.
 - View the check/bill.
 
-_GET_ [_https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id/order\_items_](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items)
-
-- FOR logged in ADMINS
+**FOR logged in ADMINS**
   - View tables
-
-GET _https://orderhere.herokuapp.com/shops/:shop\_id/tables_
-
-  - [View and complete current orders.](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items)
+  - View and complete current orders()
 
 GET _https://orderhere.herokuapp.com/shops/:shop\_id/order\_items_
 
@@ -123,6 +99,33 @@ To communicate with the postgresql database, this app will use a rails API.
   - **shops#update**
   - **shops#destroy**
 
+  **Endpoints**
+  
+  -GET https://orderhere.herokuapp.com/shops
+  -GET https://orderhere.herokuapp.com/shops/search?q=query
+  -PUT https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id
+  -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id
+  -GET https://orderhere.herokuapp.com/items/search?q=query
+  -POST https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id/order\_items
+    params{_
+      _&quot;items&quot;:[_
+      _{_
+      _&quot;name&quot;:&quot;tea&quot;,_
+      _&quot;price&quot;:5,_
+      _&quot;quantity&quot;:2,_
+      _&quot;shop\_id&quot;:1,_
+      _&quot;table\_id&quot;:3,_
+      _&quot;owner\_id&quot;:&quot;test123124&quot;_
+      _}_
+      _]}_
+      
+  -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id/order\_items
+  -PUT https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items
+  -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables
+
+
+  
+  
 **MODULES AND APIs**
 
 **Client:**
@@ -134,6 +137,7 @@ To communicate with the postgresql database, this app will use a rails API.
 - **barcode-scanner** for capacitor =\&gt; scan qr codes
 - **context** =\&gt; react context api to be able to pass props to each level of the app
 - **storage** for capacitor =\&gt; local storage implementation
+- **axios** =\&gt; make http requests
 
 **API:**
 
