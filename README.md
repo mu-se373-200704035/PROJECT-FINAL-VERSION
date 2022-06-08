@@ -117,21 +117,29 @@ To communicate with the postgresql database, this app will use a rails API.
 **Pages:**
 
 - **Customer (no need to log in)**
-  - Register Page
+ - Welcome Page
+
+![](images/1.PNG)
+
+- Register Page
 
 ![](images/register.PNG)
 
   - Login Page
 
-![](images/login.png)
+![](images/login.PNG)
 
   - Shops Page
 
-![](images/1.png)
+![](images/2.PNG)
 
   - Order Page
 
-![](images/2.png)
+![](images/3.PNG)
+
+ - Order Page -> Order Slider
+
+![](images/4.PNG)
 
 - **Admin (logged in only)**
   - AdminOrders Page
