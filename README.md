@@ -90,34 +90,6 @@ To communicate with the postgresql database, this app will use a rails API.
   - **shops#update**
   - **shops#update**
   - **shops#destroy**
-
-  >> **Endpoints**
-  -GET https://orderhere.herokuapp.com/shops
-  -GET https://orderhere.herokuapp.com/shops/search?q=query
-  -PUT https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id
-  -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id
-  -GET https://orderhere.herokuapp.com/items/search?q=query
-  -POST https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id/order\_items
-    params{_
-      _&quot;items&quot;:[_
-      _{_
-      _&quot;name&quot;:&quot;tea&quot;,_
-      _&quot;price&quot;:5,_
-      _&quot;quantity&quot;:2,_
-      _&quot;shop\_id&quot;:1,_
-      _&quot;table\_id&quot;:3,_
-      _&quot;owner\_id&quot;:&quot;test123124&quot;_
-      _}_
-      _]}_
-      
-  -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id/order\_items
-  -PUT https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items
-  -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables
-  -GET https://orderhere.herokuapp.com/shops/:shop\_id/order\_items
-  -PUT https://orderhere.herokuapp.com/shops/:shop\_id/order\_items
-  -GET https://orderhere.herokuapp.com/shops/:shop\_id/requests
-  -DELETE https://orderhere.herokuapp.com/shops/:shop\_id/requests/_:request_id
-  
   
 **MODULES AND APIs**
 
