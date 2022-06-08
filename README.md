@@ -14,8 +14,6 @@ Restaurants and cafes that are not too large or small usually work with 3 – 4 
 
 **SYSTEM ARCHITECTURE**
 
-**Functions And Endpoints**
-
 **Client Requirements:**
 
     >> ( for customers)
@@ -48,15 +46,7 @@ Restaurants and cafes that are not too large or small usually work with 3 – 4 
 **FOR logged in ADMINS**
   - View tables
   - View and complete current orders()
-
-GET _https://orderhere.herokuapp.com/shops/:shop\_id/order\_items_
-
-_PUT_ _https://orderhere.herokuapp.com/shops/:shop\_id/order\_items_
-
   - View waiter requests.
-
-GET [_https://orderhere.herokuapp.com/shops/:shop\_id/_](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items)_requests_
-
   - View and manipulate items.
 
 GET _https://orderhere.herokuapp.com/shops/:shop\_id/items_
@@ -124,8 +114,10 @@ To communicate with the postgresql database, this app will use a rails API.
   -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables/:table\_id/order\_items
   -PUT https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items
   -GET https://orderhere.herokuapp.com/shops/:shop\_id/tables
-
-
+  -GET https://orderhere.herokuapp.com/shops/:shop\_id/order\_items
+  -PUT https://orderhere.herokuapp.com/shops/:shop\_id/order\_items
+  -GET https://orderhere.herokuapp.com/shops/:shop\_id/requests
+  -DELETE https://orderhere.herokuapp.com/shops/:shop\_id/requests/_:request_id
   
   
 **MODULES AND APIs**
