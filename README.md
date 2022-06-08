@@ -112,26 +112,26 @@ To communicate with the postgresql database, this app will use a rails API.
 - **pundit** =\&gt; authorization
 - **pg** =\&gt; postgresql implementation
 - **jbuilder** =\&gt; to create json responses
-- **backend API deployed at** [_https://orderhere.herokuapp.com_](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items)
+- **backend API deployed at** [API](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items)
 
 **Pages:**
 
 - **Customer (no need to log in)**
   - Register Page
 
-![](RackMultipart20220608-1-sbat6w_html_9fcd20e534c4dee2.png)
+![](images/register.png)
 
   - Login Page
 
-![](RackMultipart20220608-1-sbat6w_html_b7b09d9bb0fef186.png)
+![](images/login.png)
 
   - Shops Page
 
-![](RackMultipart20220608-1-sbat6w_html_de72caba56cdfd2c.png)
+![](images/1.png)
 
   - Order Page
 
-![](RackMultipart20220608-1-sbat6w_html_b889e6c389644d0.png)
+![](images/2.png)
 
 - **Admin (logged in only)**
   - AdminOrders Page
