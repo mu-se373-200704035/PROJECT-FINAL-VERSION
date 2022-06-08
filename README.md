@@ -91,23 +91,23 @@ To communicate with the postgresql database, this app will use a rails API.
 
 **Client:**
 
-- **react** =\&gt; javascript framework
-- **react-router** =\&gt; navigate between pages
-- **ionic-react** =\&gt; some ionic components
-- **nanoid** =\&gt; generate randomized strings for keys
-- **barcode-scanner** for capacitor =\&gt; scan qr codes
-- **context** =\&gt; react context api to be able to pass props to each level of the app
-- **storage** for capacitor =\&gt; local storage implementation
-- **axios** =\&gt; make http requests
+- **react** => javascript framework
+- **react-router** => navigate between pages
+- **ionic-react** => some ionic components
+- **nanoid** => generate randomized strings for keys
+- **barcode-scanner** for capacitor => scan qr codes
+- **context** => react context api to be able to pass props to each level of the app
+- **storage** for capacitor => local storage implementation
+- **axios** => make http requests
 
 **API:**
 
 - **rails**
-- **devise** =\&gt; authentication
-- **devise-token-auth** =\&gt; authentication
-- **pundit** =\&gt; authorization
-- **pg** =\&gt; postgresql implementation
-- **jbuilder** =\&gt; to create json responses
+- **devise** => authentication
+- **devise-token-auth** => authentication
+- **pundit** => authorization
+- **pg** => postgresql implementation
+- **jbuilder** =>; to create json responses
 - **backend API deployed at** [API](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items)
 
 **Pages:**
