@@ -17,10 +17,12 @@ Restaurants and cafes that are not too large or small usually work with 3 – 4 
 **Functions And Endpoints**
 
 **Client Requirements:**
-    • ( for customers ) scanning qr code and claiming the table if it is available.
-    • ( for customers ) function to add to order and send the order to the table which has the matching owner id.
-    • ( for customers ) function to call a waiter for help or request the check.
-    • ( for customers ) function to search for items in the menu by name.
+
+    >> ( for customers)
+    • scanning qr code and claiming the table if it is available.
+    • function to add to order and send the order to the table which has the matching owner id.
+    • function to call a waiter for help or request the check.
+    • function to search for items in the menu by name.
     
     >> ( only logged in admins are allowed to see or do the things below )
 
