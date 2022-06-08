@@ -144,21 +144,27 @@ To communicate with the postgresql database, this app will use a rails API.
 - **Admin (logged in only)**
   - AdminOrders Page
 
-![](RackMultipart20220608-1-sbat6w_html_a15e0bc042c3774.png)
+![](images/5.PNG)
 
-  - Admin Tables Page
+  - AdminOrders Page => Requests Slider
 
-![](RackMultipart20220608-1-sbat6w_html_c5afd90bca8fab40.png)
+![](images/6.PNG)
+
+ - Admin Tables Page
+
+![](images/7.PNG)
 
   - AdminTableDetails Page
 
-![](RackMultipart20220608-1-sbat6w_html_b45429032163f09d.png)
+![](images/8.PNG)
+
+![](images/9.PNG)
 
   - AdminMenu Page
 
-![](RackMultipart20220608-1-sbat6w_html_1120587e4359102e.png)
+![](images/10.PNG)
 
 **Database:**
 
-![](RackMultipart20220608-1-sbat6w_html_de55ae0b9787bdc1.png)
+![](images/11.PNG)
 
