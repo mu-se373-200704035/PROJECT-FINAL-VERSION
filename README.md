@@ -49,10 +49,6 @@ Restaurants and cafes that are not too large or small usually work with 3 – 4 
   - View waiter requests.
   - View and manipulate items.
 
-GET _https://orderhere.herokuapp.com/shops/:shop\_id/items_
-
-_PUT_ [_https://orderhere.herokuapp.com/shops/:shop\_id/_](https://orderhere.herokuapp.com/shops/:shop_id/tables/:table_id/order_items)_items/:item\_id_
-
 **Server:**
 
 To communicate with the postgresql database, this app will use a rails API.
@@ -166,7 +162,7 @@ To communicate with the postgresql database, this app will use a rails API.
 
 ![](images/10.PNG)
 
-**Database:**
+**Database Tables:**
 
 ![](images/11.PNG)
 
