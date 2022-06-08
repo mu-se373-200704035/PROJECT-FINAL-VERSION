@@ -158,6 +158,8 @@ To communicate with the postgresql database, this app will use a rails API.
 
 ![](images/8.PNG)
 
+  - After Completing the order
+
 ![](images/9.PNG)
 
   - AdminMenu Page
